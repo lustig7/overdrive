@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "DPD",
+    "PcP",
+    "DPD"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "P": {
+      "tag": "c:circuits/advanced"
+    },
+    "c": {
+      "item": "overdrive:overclock_chip_t1"
+    }
+  },
+  "result": {
+    "id": "overdrive:overclock_chip_t2",
+    "count": 1
+  }
+}

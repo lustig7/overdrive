@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "overdrive:overdrive"
+    },
+    "title": {
+      "translate": "advancements.overdrive.root.title"
+    },
+    "description": {
+      "translate": "advancements.overdrive.root.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/block/polished_blackstone_bricks.png"
+  },
+  "criteria": {
+    "has_overdrive": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "overdrive:overdrive"
+          }
+        ]
+      }
+    }
+  }
+}

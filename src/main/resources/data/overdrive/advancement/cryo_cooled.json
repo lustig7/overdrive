@@ -1,0 +1,27 @@
+{
+  "parent": "overdrive:water_cooled",
+  "display": {
+    "icon": {
+      "id": "overdrive:cryo_coolant_bucket"
+    },
+    "title": {
+      "translate": "advancements.overdrive.cryo_cooled.title"
+    },
+    "description": {
+      "translate": "advancements.overdrive.cryo_cooled.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "overclock": {
+      "trigger": "overdrive:overclock",
+      "conditions": {
+        "min_multiplier": 2,
+        "coolant": "cryo"
+      }
+    }
+  }
+}

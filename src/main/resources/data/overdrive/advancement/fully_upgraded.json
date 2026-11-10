@@ -1,0 +1,50 @@
+{
+  "parent": "overdrive:upgrade",
+  "display": {
+    "icon": {
+      "id": "overdrive:overcharge_upgrade"
+    },
+    "title": {
+      "translate": "advancements.overdrive.fully_upgraded.title"
+    },
+    "description": {
+      "translate": "advancements.overdrive.fully_upgraded.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "heat_sink_upgrade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "overdrive:heat_sink_upgrade"
+          }
+        ]
+      }
+    },
+    "efficiency_upgrade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "overdrive:efficiency_upgrade"
+          }
+        ]
+      }
+    },
+    "overcharge_upgrade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "overdrive:overcharge_upgrade"
+          }
+        ]
+      }
+    }
+  }
+}

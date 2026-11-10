@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "NPN",
+    "PcP",
+    "NPN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "P": {
+      "tag": "c:circuits/elite"
+    },
+    "c": {
+      "item": "overdrive:overclock_chip_t2"
+    }
+  },
+  "result": {
+    "id": "overdrive:overclock_chip_t3",
+    "count": 1
+  }
+}

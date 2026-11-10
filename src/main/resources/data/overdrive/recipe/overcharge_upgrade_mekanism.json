@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "XYX",
+    "YZY",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:blaze_rod"
+    },
+    "Y": {
+      "item": "minecraft:redstone_block"
+    },
+    "Z": {
+      "tag": "c:alloys/ultimate"
+    }
+  },
+  "result": {
+    "id": "overdrive:overcharge_upgrade",
+    "count": 1
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "overdrive:block/overdrive_side",
+    "front": "overdrive:block/overdrive_front",
+    "back": "overdrive:block/overdrive_back",
+    "side": "overdrive:block/overdrive_side",
+    "top": "overdrive:block/overdrive_top",
+    "bottom": "overdrive:block/overdrive_bottom",
+    "front_glow": "overdrive:block/overdrive_front_glow_1",
+    "side_glow": "overdrive:block/overdrive_side_glow_1"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#front",
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#back",
+          "cullface": "south"
+        },
+        "east": {
+          "texture": "#side",
+          "cullface": "east"
+        },
+        "west": {
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "up": {
+          "texture": "#top",
+          "cullface": "up"
+        },
+        "down": {
+          "texture": "#bottom",
+          "cullface": "down"
+        }
+      }
+    },
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "shade": false,
+      "neoforge_data": {
+        "block_light": 15,
+        "sky_light": 15,
+        "ambient_occlusion": false
+      },
+      "faces": {
+        "north": {
+          "texture": "#front_glow",
+          "cullface": "north"
+        },
+        "east": {
+          "texture": "#side_glow",
+          "cullface": "east"
+        },
+        "west": {
+          "texture": "#side_glow",
+          "cullface": "west"
+        }
+      }
+    }
+  ]
+}

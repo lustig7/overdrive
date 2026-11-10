@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "XYX",
+    "YZY",
+    "XYX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:copper_ingot"
+    },
+    "Y": {
+      "item": "minecraft:packed_ice"
+    },
+    "Z": {
+      "tag": "c:alloys/advanced"
+    }
+  },
+  "result": {
+    "id": "overdrive:heat_sink_upgrade",
+    "count": 1
+  }
+}

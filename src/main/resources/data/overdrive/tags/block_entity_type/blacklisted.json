@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "overdrive:overdrive",
+    "minecraft:mob_spawner",
+    "minecraft:trial_spawner",
+    "minecraft:end_gateway",
+    { "id": "ae2:controller", "required": false },
+    { "id": "ae2:crafting_unit", "required": false },
+    { "id": "ae2:spatial_io_port", "required": false },
+    { "id": "mekanism:quantum_entangloporter", "required": false },
+    { "id": "mekanism:digital_miner", "required": false },
+    { "id": "justdirethings:time_wand", "required": false }
+  ]
+}

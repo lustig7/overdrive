@@ -1,0 +1,41 @@
+{
+  "parent": "overdrive:first_overclock",
+  "display": {
+    "icon": {
+      "id": "overdrive:thermal_paste"
+    },
+    "title": {
+      "translate": "advancements.overdrive.cool_down.title"
+    },
+    "description": {
+      "translate": "advancements.overdrive.cool_down.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "paste": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "overdrive:overdrive"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "overdrive:thermal_paste"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

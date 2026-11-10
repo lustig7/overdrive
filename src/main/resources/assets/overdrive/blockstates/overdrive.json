@@ -1,0 +1,96 @@
+{
+  "variants": {
+    "facing=south,heat_state=0": {
+      "model": "overdrive:block/overdrive_0"
+    },
+    "facing=south,heat_state=1": {
+      "model": "overdrive:block/overdrive_1"
+    },
+    "facing=south,heat_state=2": {
+      "model": "overdrive:block/overdrive_2"
+    },
+    "facing=south,heat_state=3": {
+      "model": "overdrive:block/overdrive_3"
+    },
+    "facing=north,heat_state=0": {
+      "model": "overdrive:block/overdrive_0",
+      "y": 180
+    },
+    "facing=north,heat_state=1": {
+      "model": "overdrive:block/overdrive_1",
+      "y": 180
+    },
+    "facing=north,heat_state=2": {
+      "model": "overdrive:block/overdrive_2",
+      "y": 180
+    },
+    "facing=north,heat_state=3": {
+      "model": "overdrive:block/overdrive_3",
+      "y": 180
+    },
+    "facing=west,heat_state=0": {
+      "model": "overdrive:block/overdrive_0",
+      "y": 90
+    },
+    "facing=west,heat_state=1": {
+      "model": "overdrive:block/overdrive_1",
+      "y": 90
+    },
+    "facing=west,heat_state=2": {
+      "model": "overdrive:block/overdrive_2",
+      "y": 90
+    },
+    "facing=west,heat_state=3": {
+      "model": "overdrive:block/overdrive_3",
+      "y": 90
+    },
+    "facing=east,heat_state=0": {
+      "model": "overdrive:block/overdrive_0",
+      "y": 270
+    },
+    "facing=east,heat_state=1": {
+      "model": "overdrive:block/overdrive_1",
+      "y": 270
+    },
+    "facing=east,heat_state=2": {
+      "model": "overdrive:block/overdrive_2",
+      "y": 270
+    },
+    "facing=east,heat_state=3": {
+      "model": "overdrive:block/overdrive_3",
+      "y": 270
+    },
+    "facing=up,heat_state=0": {
+      "model": "overdrive:block/overdrive_0",
+      "x": 90
+    },
+    "facing=up,heat_state=1": {
+      "model": "overdrive:block/overdrive_1",
+      "x": 90
+    },
+    "facing=up,heat_state=2": {
+      "model": "overdrive:block/overdrive_2",
+      "x": 90
+    },
+    "facing=up,heat_state=3": {
+      "model": "overdrive:block/overdrive_3",
+      "x": 90
+    },
+    "facing=down,heat_state=0": {
+      "model": "overdrive:block/overdrive_0",
+      "x": 270
+    },
+    "facing=down,heat_state=1": {
+      "model": "overdrive:block/overdrive_1",
+      "x": 270
+    },
+    "facing=down,heat_state=2": {
+      "model": "overdrive:block/overdrive_2",
+      "x": 270
+    },
+    "facing=down,heat_state=3": {
+      "model": "overdrive:block/overdrive_3",
+      "x": 270
+    }
+  }
+}

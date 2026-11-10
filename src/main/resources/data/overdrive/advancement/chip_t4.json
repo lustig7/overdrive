@@ -1,0 +1,30 @@
+{
+  "parent": "overdrive:chip",
+  "display": {
+    "icon": {
+      "id": "overdrive:overclock_chip_t4"
+    },
+    "title": {
+      "translate": "advancements.overdrive.chip_t4.title"
+    },
+    "description": {
+      "translate": "advancements.overdrive.chip_t4.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_chip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "overdrive:overclock_chip_t4"
+          }
+        ]
+      }
+    }
+  }
+}

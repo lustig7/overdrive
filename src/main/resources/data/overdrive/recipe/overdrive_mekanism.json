@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "ICI",
+    "AXA",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:ingots/steel"
+    },
+    "C": {
+      "item": "minecraft:comparator"
+    },
+    "A": {
+      "tag": "c:circuits/advanced"
+    },
+    "X": {
+      "item": "mekanism:steel_casing"
+    }
+  },
+  "result": {
+    "id": "overdrive:overdrive",
+    "count": 1
+  }
+}

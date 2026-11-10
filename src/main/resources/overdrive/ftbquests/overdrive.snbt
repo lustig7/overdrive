@@ -1,0 +1,213 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "overdrive"
+	group: ""
+	icon: { count: 1, id: "overdrive:overdrive" }
+	id: "5296227E0E530190"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Place an &eOverdrive&r against any machine. The back (connector plate) faces the machine.", "", "Each step up doubles the speed and &cquadruples&r the energy: 100 × m² FE/t.", "Without a chip it can only reach 2×.", "", "With &dMekanism&r or &bAE2&r installed, the recipes use their circuits and processors."]
+			id: "50D37EE1D2F64F2D"
+			rewards: [{ id: "7B6A6242F98BCC70", type: "xp", xp: 100 }]
+			subtitle: "Speed has a price"
+			tasks: [{ count: 1L, id: "0A893B194E1732E6", item: { count: 1, id: "overdrive:overdrive" }, type: "item" }]
+			title: "Overdrive"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50D37EE1D2F64F2D"]
+			description: ["Feed it FE, pick 2× in the GUI and watch the machine run twice as fast.", "", "Stay near the Overdrive: the quest checks players within 16 blocks."]
+			id: "0F902A356F5D0A9F"
+			rewards: [{ id: "759F4839CE63EA75", type: "xp", xp: 100 }]
+			tasks: [{ advancement: "overdrive:first_overclock", criterion: "", id: "6CE3ECE7CDAE64EF", type: "advancement" }]
+			title: "Turbo Button"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50D37EE1D2F64F2D"]
+			description: ["The button next to the upgrade slots switches the redstone mode:", "&7ignore&r, &crun with a signal&r or &crun without a signal&r. While held off it idles at 1× for free.", "", "A &ecomparator&r next to the Overdrive outputs its heat (0-15). Great for automatic shutdowns!"]
+			id: "09AFD8E9A65E4B2F"
+			optional: true
+			rewards: [{ id: "6164B34F6922D13B", type: "xp", xp: 50 }]
+			subtitle: "Optional"
+			tasks: [{ id: "4D22353936CA1449", type: "checkmark" }]
+			title: "Redstone Control"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50D37EE1D2F64F2D"]
+			description: ["Chips unlock higher multipliers: T1 8×, T2 16×, T3 32×, T4 64×.", "", "They wear down while running, faster when hot. A worn-out chip breaks."]
+			id: "20330F93C6D03EF6"
+			rewards: [{ id: "34220FBF77042E20", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "504B17D7CCB4BEBB", item: { count: 1, id: "overdrive:overclock_chip_t1" }, type: "item" }]
+			title: "Overclock Chips"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["20330F93C6D03EF6"]
+			description: ["Diamonds plus redstone blocks (or advanced circuits / calculation processors) around a T1 chip."]
+			id: "64E353AB4834C83D"
+			rewards: [{ id: "194EBACEC4D325BC", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "0EEB7FA2C301F110", item: { count: 1, id: "overdrive:overclock_chip_t2" }, type: "item" }]
+			title: "T2 Chip"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["64E353AB4834C83D"]
+			description: ["Netherite scrap plus amethyst (or elite circuits / engineering processors) around a T2 chip."]
+			id: "160AE037B10A3351"
+			rewards: [{ id: "07EBAAA934F29A45", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "57C5B316C72DEA06", item: { count: 1, id: "overdrive:overclock_chip_t3" }, type: "item" }]
+			title: "T3 Chip"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["160AE037B10A3351"]
+			description: ["Unlocks 64×. With &6Allthemodium&r installed, the recipe needs Allthemodium ingots", "instead of echo shards."]
+			id: "2D3AEEF4BA1FC4BD"
+			rewards: [{ id: "484B6FD276F9E2AA", type: "xp", xp: 500 }]
+			subtitle: "The endgame chip"
+			tasks: [{ count: 1L, id: "3275D857ADB7B9A1", item: { count: 1, id: "overdrive:overclock_chip_t4" }, type: "item" }]
+			title: "T4 Chip"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["50D37EE1D2F64F2D"]
+			description: ["Clay, quartz, a snowball and glowstone dust make four tubes of &bThermal Paste&r.", "", "Use it on a hot Overdrive to drop the heat by 30 % on the spot."]
+			id: "27EB8678BA6AD111"
+			rewards: [{ count: 4, id: "15318AA95F9C689C", item: { count: 1, id: "overdrive:thermal_paste" }, type: "item" }]
+			subtitle: "Instant cooling"
+			tasks: [{ count: 1L, id: "5FBF7236522C367C", item: { count: 1, id: "overdrive:thermal_paste" }, type: "item" }, { advancement: "overdrive:cool_down", criterion: "", id: "29EE989047D8110C", type: "advancement" }]
+			title: "Thermal Paste"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["27EB8678BA6AD111", "20330F93C6D03EF6"]
+			description: ["Craft a damaged Overclock Chip together with 1-4 Thermal Paste:", "each paste restores 25 % of its durability. Cheaper than a new T4 chip!"]
+			id: "2FC5838AF6DEA0CA"
+			rewards: [{ id: "1FF50BD3C2DC0D88", type: "xp", xp: 100 }]
+			tasks: [{ id: "4BA19FF010FFE4FC", type: "checkmark" }]
+			title: "Chip Repair"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0F902A356F5D0A9F"]
+			description: ["Heat climbs fast above 4×. Fill the tank with &bwater&r (bucket or pipe, any side)", "for 128 cooling. Above 70 % heat the Overdrive throttles, at 100 % it melts down."]
+			id: "71D86D9A6A6A3FD9"
+			rewards: [{ id: "7A16861C26CED487", type: "xp", xp: 150 }]
+			tasks: [{ advancement: "overdrive:water_cooled", criterion: "", id: "0AE24D3EFE8721E5", type: "advancement" }]
+			title: "Liquid Cooling"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71D86D9A6A6A3FD9"]
+			description: ["A bucket, four blue ice and two prismarine crystals make a bucket of &bCryo Coolant&r.", "It cools 16× better than water and uses far less."]
+			id: "574C804ABD5D38C7"
+			rewards: [{ count: 1, id: "2300B138C4CD5462", item: { count: 1, id: "overdrive:cryo_coolant_bucket" }, type: "item" }]
+			tasks: [{ count: 1L, id: "11232095853BD7DE", item: { count: 1, id: "overdrive:cryo_coolant_bucket" }, type: "item" }]
+			title: "Cryo Coolant"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["574C804ABD5D38C7"]
+			description: ["Run an overclock with Cryo Coolant in the tank."]
+			id: "48802F5BF107C870"
+			rewards: [{ id: "743A2402AAAFA543", type: "xp", xp: 250 }]
+			tasks: [{ advancement: "overdrive:cryo_cooled", criterion: "", id: "0F6194817644DD0C", type: "advancement" }]
+			title: "Cold Logic"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F902A356F5D0A9F"]
+			description: ["Let an Overdrive reach 100 % heat. By default it explodes, so maybe not next to your base."]
+			id: "2D0180766560CC00"
+			optional: true
+			rewards: [{ id: "2EA442CA28CE8050", type: "xp", xp: 50 }]
+			subtitle: "Optional"
+			tasks: [{ advancement: "overdrive:meltdown", criterion: "", id: "65CF8E996D4812E1", type: "advancement" }]
+			title: "Too Hot to Handle"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0F902A356F5D0A9F", "64E353AB4834C83D"]
+			description: ["Run a machine at 16×: 25,600 FE/t."]
+			id: "4776CBA6DB509D59"
+			rewards: [{ id: "6AF6D9DD57444F46", type: "xp", xp: 250 }]
+			tasks: [{ advancement: "overdrive:redline", criterion: "", id: "7F39308D8E19F678", type: "advancement" }]
+			title: "Redline"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0F902A356F5D0A9F"]
+			description: ["The Overdrive has two &aupgrade slots&r. A Heat Sink multiplies the cooling capacity by 1.5;", "two of them stack to 2.25."]
+			id: "55190A600587A585"
+			rewards: [{ id: "4E956CC57005D858", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "4E7F873F26E161B2", item: { count: 1, id: "overdrive:heat_sink_upgrade" }, type: "item" }]
+			title: "Heat Sink Upgrade"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["55190A600587A585"]
+			description: ["Cuts the energy cost to 75 % (56 % with two). Your generators will thank you."]
+			id: "7D921FC99DA9AFEE"
+			rewards: [{ id: "785BEFDEE8D01A68", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "49AF6F1BF23D8191", item: { count: 1, id: "overdrive:efficiency_upgrade" }, type: "item" }]
+			title: "Efficiency Upgrade"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7D921FC99DA9AFEE", "64E353AB4834C83D"]
+			description: ["Doubles the chip's multiplier limit: a T3 chip reaches 64×.", "The price: 1.5× the heat. Bring serious cooling."]
+			id: "0D8E38CBE85627F4"
+			rewards: [{ id: "52E0E573C65C1811", type: "xp", xp: 250 }]
+			subtitle: "Risky"
+			tasks: [{ count: 1L, id: "7271767B2CA48966", item: { count: 1, id: "overdrive:overcharge_upgrade" }, type: "item" }]
+			title: "Overcharge Upgrade"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["55190A600587A585", "7D921FC99DA9AFEE", "0D8E38CBE85627F4"]
+			description: ["Own all three upgrade types, then pick the two that suit each machine."]
+			id: "6A31379E4CD84171"
+			rewards: [{ id: "3AD941FCD66068DD", type: "xp", xp: 300 }]
+			tasks: [{ advancement: "overdrive:fully_upgraded", criterion: "", id: "236DEC48738ADF00", type: "advancement" }]
+			title: "Fully Loaded"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2D3AEEF4BA1FC4BD", "48802F5BF107C870", "4776CBA6DB509D59"]
+			description: ["Run a machine at 64×. You need a T4 chip (or T3 + Overcharge), serious power and Cryo cooling,", "and even then it sits in the throttle band unless you add Heat Sinks."]
+			id: "73610F06F552D498"
+			shape: "gear"
+			size: 1.5d
+			rewards: [{ id: "16AF73F66D81D40E", type: "xp", xp: 1000 }]
+			subtitle: "64× at 409,600 FE/t"
+			tasks: [{ advancement: "overdrive:beyond_the_limit", criterion: "", id: "1633EE5BB2850FB5", type: "advancement" }]
+			title: "Beyond the Limit"
+			x: 8.0d
+			y: 8.0d
+		}
+	]
+	title: "Overdrive"
+}

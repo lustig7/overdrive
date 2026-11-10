@@ -1,0 +1,34 @@
+{
+  "parent": "overdrive:root",
+  "display": {
+    "icon": {
+      "id": "overdrive:heat_sink_upgrade"
+    },
+    "title": {
+      "translate": "advancements.overdrive.upgrade.title"
+    },
+    "description": {
+      "translate": "advancements.overdrive.upgrade.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_upgrade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "overdrive:heat_sink_upgrade",
+              "overdrive:efficiency_upgrade",
+              "overdrive:overcharge_upgrade"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

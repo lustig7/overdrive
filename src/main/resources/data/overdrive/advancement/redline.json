@@ -1,0 +1,26 @@
+{
+  "parent": "overdrive:first_overclock",
+  "display": {
+    "icon": {
+      "id": "overdrive:overclock_chip_t2"
+    },
+    "title": {
+      "translate": "advancements.overdrive.redline.title"
+    },
+    "description": {
+      "translate": "advancements.overdrive.redline.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "overclock": {
+      "trigger": "overdrive:overclock",
+      "conditions": {
+        "min_multiplier": 16
+      }
+    }
+  }
+}

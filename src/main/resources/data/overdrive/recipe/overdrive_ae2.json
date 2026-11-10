@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "mekanism"
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "ICI",
+    "AXA",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "C": {
+      "item": "minecraft:comparator"
+    },
+    "A": {
+      "item": "ae2:engineering_processor"
+    },
+    "X": {
+      "item": "ae2:fluix_block"
+    }
+  },
+  "result": {
+    "id": "overdrive:overdrive",
+    "count": 1
+  }
+}

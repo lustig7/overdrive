@@ -1,0 +1,26 @@
+{
+  "parent": "overdrive:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:clock"
+    },
+    "title": {
+      "translate": "advancements.overdrive.first_overclock.title"
+    },
+    "description": {
+      "translate": "advancements.overdrive.first_overclock.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "overclock": {
+      "trigger": "overdrive:overclock",
+      "conditions": {
+        "min_multiplier": 2
+      }
+    }
+  }
+}

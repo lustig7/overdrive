@@ -1,0 +1,29 @@
+{
+  "parent": "overdrive:redline",
+  "display": {
+    "icon": {
+      "id": "overdrive:overclock_chip_t4"
+    },
+    "title": {
+      "translate": "advancements.overdrive.beyond_the_limit.title"
+    },
+    "description": {
+      "translate": "advancements.overdrive.beyond_the_limit.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "overclock": {
+      "trigger": "overdrive:overclock",
+      "conditions": {
+        "min_multiplier": 64
+      }
+    }
+  },
+  "rewards": {
+    "experience": 250
+  }
+}
